@@ -1,0 +1,176 @@
+@font-face {
+  font-family: 'robotoregular';
+  src: url('fonts/Roboto-Regular-webfont.woff') format('woff'),
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+body {
+    font-family: 'robotoregular';
+    margin: 0;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+}
+
+/* Just colors */
+.header, .hero-section, .footer{
+  background-color: #1F2937;
+  color: white;
+}
+
+.header{
+  border: 1px solid #a88080;
+  display: flex;
+  justify-content: center;
+}
+.hero-section, .info-section, .quote-section, .call-to-action-section{
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-self: stretch;
+}
+
+.container{
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-grow: 1;
+}
+
+
+h1{
+  margin-left: 16px;
+}
+.top-links{
+  display: flex;
+  gap: 16px;
+  margin: 16px;
+}
+
+.hero-section{
+
+}
+
+.hero-left, .hero-right{
+  display: flex;
+  flex: 1;
+  min-height: 300px;
+  border: 1px solid white;
+  justify-content: space-evenly;
+}
+
+.hero-left{
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.hero-right{
+  align-items: center;
+}
+
+.hero-main{
+  font-size: xx-large;
+  font-weight: bolder;
+}
+
+
+.info-section .container {
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-grow: 1;
+  flex-direction: column;
+}
+.info-header{
+  font-size: xx-large;
+  font-weight: bold;
+}
+.box-group{
+  display: flex;
+  justify-content: space-evenly;
+  gap: 16px;
+  padding: 16px;
+}
+
+.box-container{
+  min-width: 200px;
+  min-height: 200px;
+  border: 1px solid #a88080;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 16 px;
+  padding: 24px;
+  
+}
+
+.box{
+  font-size: xx-large;
+  display: flex;
+  justify-content: center;
+  min-width: 160px;
+  min-height: 160px;
+  align-items: center;
+  border: 5px solid blue;
+  margin-bottom: 16px;
+}
+
+.box-text{
+  text-align: center;
+}
+
+.quote-section .container {
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-grow: 1;
+  flex-direction: column;
+}
+
+.call-to-action-section{
+
+}
+.call-to-action-box{
+  max-width: 800px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-grow: 1;
+  border: 1px solid #a88080;
+}
+
+.footer{
+  text-align: center;
+}
+
+ul{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+a {
+  /* this removes the line under our links */
+  text-decoration: none;
+  color: white;
+}
+
+/* Font check
+.italic{
+  font-style: italic;
+}
+.bold{
+  font-weight: bold;
+}
+.bold-italic{
+  font-style: italic;
+  font-style: bold;
+} */
