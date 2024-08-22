@@ -1,9 +1,8 @@
 @font-face {
   font-family: 'robotoregular';
-  src: url('fonts/Roboto-Regular-webfont.woff') format('woff'),
+  src: url('fonts/Roboto-Regular-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
-
 }
 
 body {
@@ -52,9 +51,6 @@ h1{
   margin: 16px;
 }
 
-.hero-section{
-
-}
 
 .hero-left, .hero-right{
   display: flex;
@@ -134,9 +130,6 @@ h1{
   flex-direction: column;
 }
 
-.call-to-action-section{
-
-}
 .call-to-action-box{
   max-width: 800px;
   display: flex;
