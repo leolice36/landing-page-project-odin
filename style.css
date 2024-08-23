@@ -1,12 +1,40 @@
 @font-face {
-  font-family: 'robotoregular';
+  font-family: 'roboto';
   src: url('fonts/Roboto-Regular-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'roboto';
+  src: url('fonts/Roboto-Bold-webfont.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'roboto';
+  src: url('fonts/Roboto-Black-webfont.woff') format('woff');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'roboto';
+  src: url('fonts/Roboto-Light-webfont.woff') format('woff');
+  font-weight: lighter;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'roboto';
+  src: url('fonts/Roboto-Lightitalic-webfont.woff') format('woff');
+  font-weight: lighter;
+  font-style: italic;
+}
+
 body {
-    font-family: 'robotoregular';
+    font-family: 'roboto';
     margin: 0;
     display: flex;
     min-height: 100vh;
@@ -22,15 +50,26 @@ body {
 }
 
 .header{
-  border: 1px solid #a88080;
   display: flex;
   justify-content: center;
 }
+
+.header h1{
+  font-size: 24px;
+  font-weight: 700;
+  color: #f9faf8;
+}
+
 .hero-section, .info-section, .quote-section, .call-to-action-section{
   display: flex;
   flex: 1;
   justify-content: center;
   align-self: stretch;
+}
+
+.hero-section{
+  max-height: 420px;
+  padding-bottom: 40px;
 }
 
 .container{
@@ -42,13 +81,15 @@ body {
 }
 
 
-h1{
-  margin-left: 16px;
+.header-logo{
+  font-size: 24px;
+  font-weight: 700;
+  padding: 16px 0;
 }
 .top-links{
   display: flex;
-  gap: 16px;
-  margin: 16px;
+  gap: 20px;
+  margin: 0px;
 }
 
 
@@ -56,7 +97,6 @@ h1{
   display: flex;
   flex: 1;
   min-height: 300px;
-  border: 1px solid white;
   justify-content: space-evenly;
 }
 
@@ -67,21 +107,34 @@ h1{
 
 .hero-right{
   align-items: center;
+  background-color: #e5e7ebb1;
+  color: #1F2937;
 }
 
 .hero-main{
-  font-size: xx-large;
-  font-weight: bolder;
+  font-size: 48px;
+  font-weight: 800;
+  color: #f9faf8;
 }
+
+.hero-secondary, .top-links{
+  color: #e5e7eb;
+  font-size: 18px;
+}
+
 .sign-up{
-  max-width: 100px;
-  padding: 12px;
+  max-width: 140px;
+  padding: 12px 24px;
   border-radius: 8px;
   border: 0;
+  background-color: #3882f6;
+  color: #f9faf8;
+  font-weight: bolder;
+  font-size: 18px;
 }
 
 .info-section .container {
-  max-width: 1200px;
+  max-width: 1000px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -89,62 +142,111 @@ h1{
   flex-direction: column;
 }
 .info-header{
-  font-size: xx-large;
-  font-weight: bold;
+  font-size: 36px;
+  font-weight: bolder;
+  color: #1F2937;
 }
 .box-group{
+  min-width: 1000px;
   display: flex;
-  justify-content: space-evenly;
-  padding: 16px;
+  justify-content: space-between;
+  padding: 0px;
+  gap: 70px;
 }
 
 .box-container{
-  min-width: 200px;
-  min-height: 200px;
-  border: 1px solid #a88080;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: stretch;
-  padding: 16px;
+  padding: 0;
 }
 
 .box{
   font-size: xx-large;
   display: flex; 
   justify-content: center;
-  min-height: 150px; 
+  min-height: 180px; 
   align-items: center;
-  border: 5px solid blue;
+  border: 4px solid #3882f6;
   border-radius: 16px;
-  margin: 16px;
-  
+  margin-bottom: 12px;
 }
 
 .box-text{
   text-align: center;
+  color: #1F2937;
+  font-size: 18px;
 }
 
+.quote-section{
+  background-color: #e5e7eb;
+}
 .quote-section .container {
-  max-width: 1200px;
+  max-width: 1000px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   flex-grow: 1;
   flex-direction: column;
+  color: #1F2937;
+
+}
+
+.quote{
+  font-style: italic;
+  font-weight: lighter;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.quoter{
+  font-weight: 700;
+  font-size: 24px;
+  align-self: flex-end;
+  margin-right: 65px;
+}
+
+.call-to-action-section{
+  align-items: center;
 }
 
 .call-to-action-box{
-  max-width: 800px;
+  max-width: 1200px;
+  min-height: 150px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   flex-grow: 1;
-  border: 1px solid #a88080;
+  background-color: #3882f6;
+  border-radius: 10px;
+  color: #f9faf8;
+}
+
+.call-to-action-box .sign-up{
+  border: 3px solid #f9faf8;
+  min-width: 140px;
+}
+
+.call-to-action-text, .call-to-action-box .sign-up{
+  margin: 0 140px;
+}
+
+.call-to-action{
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.call-to-action-sub{
+  color: #e5e7eb;
+  font-size: 18px;
 }
 
 .footer{
   text-align: center;
+  color: #e5e7eb;
+  font-size: 18px;
+  padding: 25px;
 }
 
 ul{
@@ -164,10 +266,10 @@ a {
 .italic{
   font-style: italic;
 }
-.bold{
-  font-weight: bold;
+.bolder{
+  font-weight: bolder;
 }
-.bold-italic{
+.bolder-italic{
   font-style: italic;
-  font-style: bold;
+  font-style: bolder;
 } */
